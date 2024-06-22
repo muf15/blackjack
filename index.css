@@ -1,0 +1,151 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("./images/table.png");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 2vh 5vw;
+}
+
+h1 {
+    color: goldenrod;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 6vh;
+    margin-bottom: 20px;
+}
+
+#instructions,
+#game {
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    margin: 2vh 2vw;
+    color: #e0e0e0;
+    width: 45%;
+    max-height: 63vh;
+}
+
+#instructions {
+    text-align: left;
+}
+
+#game {
+    font-size: 3.5vh;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 4.5vh;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+button {
+    color: white;
+    width: 200px;
+    background: goldenrod;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.card {
+    width: 8vw;
+    height: 20vh;
+    margin: 0 5px;
+}
+
+#cards-el {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#cards-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 3vh;
+}
+
+.sub-list {
+    padding-left: 20px;
+    list-style-type: lower-roman;
+}
+
+ol {
+    padding-left: 8px;
+    list-style-position: outside;
+}
+
+#how {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 5vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #e6b800;
+}
+
+main {
+    min-height: 100vh;
+    max-height: 100vh;
+    padding-bottom: 50px;
+}

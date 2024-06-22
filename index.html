@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/b7cb766248.js" crossorigin="anonymous"></script>
+    <title>BlackJack</title>
+</head>
+
+<body>
+    <main>
+        <h1>BlackJack</h1>
+        <div id="container">
+            <div id="instructions">
+                <p id="how">How to play?</p>
+                <ol>
+                    <li>Click "Start Game".</li>
+                    <li>You'll be dealt two cards to start.</li>
+                    <li>The sum of the values of your cards is displayed.</li>
+                    <li>Points System:</li>
+                    <ol class="sub-list">
+                        <li>Numered cards have their numeric value as points.</li>
+                        <li>Face cards (Jack, Queen, King) each count as 10 points</li>
+                        <li>Ace has 11 points.</li>
+                    </ol>
+                    <li>Winning/Losing:</li>
+                    <ol class="sub-list">
+                        <li>If your hand value is 21, you win with Blackjack and get ₹100!</li>
+                        <li>If your hand value is less than 21, click new card to get as close to 21 as possible without
+                            going over.</li>
+                        <li>If your hand value exceeds 21, you lose the game and ₹100 are deducted.</li>
+                    </ol>
+                    <li>Once you're done, you can start a new game by clicking "New Game" again.</li>
+                </ol>
+            </div>
+            <div id="game">
+                <p id="message-el">Want to play a round?</p>
+                <div>
+                    <p id="cards-label">Cards:</p>
+                    <div id="cards-el" class="cards"></div>
+                </div>
+                <p id="sum-el">Sum:</p>
+                <button onclick="startGame()">NEW GAME</button>
+                <button onclick="newCard()">NEW CARD</button>
+                <p id="player-el"></p>
+            </div>
+        </div>
+        <footer>
+            &copy; 2024 - Mufaddal Ratlamwala
+            <div class="social-icons">
+                <a href="https://github.com/muf15" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mufaddal-ratlamwala-643570256" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/muffucodes/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
